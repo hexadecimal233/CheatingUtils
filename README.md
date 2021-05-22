@@ -1,5 +1,6 @@
 # Cheating Utilities
-TBA
+* Internal game edits and hacks.
+* Some code from `pixaxeofpixie/Braindustry-Mod`
 
 ## Compiling
 JDK 8.\
