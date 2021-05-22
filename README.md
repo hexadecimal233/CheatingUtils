@@ -1,5 +1,5 @@
-# Mindustry Mod Template
-A blank template for Mindustry mods with an existing Gradle configuration to compile and dex-ify, and Github Actions to automatically do both and upload the artifacts.
+# Cheating Utilities
+TBA
 
 ## Compiling
 JDK 8.\
@@ -19,9 +19,4 @@ Plain Jar: `./gradlew build`\
 Dexify Plain Jar: `./gradlew dexify`\
 Build Plain & Dexify Jar: `./gradlew buildDex`
 
-## I have no idea what I'm doing with this
 
-1. Rename directories in `src/` to avoid collisions with other mods that didn't.
-2. Change `pGroup` in `gradle.properties` to match up with the new directories.
-3. Update `main` in `assets/mod.json` to line up with renamed directories.
-4. Refer to [Compiling](#compiling).

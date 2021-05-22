@@ -1,11 +1,11 @@
 {
-  "name": "modtemplate",
-  "displayName": "Template",
-  "author": "[#8738ff[]]Sonnicon[[]]",
-  "description": "Gradle jar Mindustry mod template",
-  "version": "0",
-  "main": "sonnicon.modtemplate.ModTemplate",
-  "minGameVersion": "105",
+  "name": "cheatingutils",
+  "displayName": "Cheating Utilities",
+  "author": "TBK",
+  "description": "Cheat in [scarlet]MINDUSTRY",
+  "version": "1.0",
+  "main": "cheatingutils.CheatMain",
+  "minGameVersion": "126",
   "dependencies": [],
   "hidden": false,
   "java": true
