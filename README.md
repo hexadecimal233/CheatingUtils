@@ -1,6 +1,7 @@
 # Cheating Utilities
 * Internal game edits and hacks.
 * Some code from `pixaxeofpixie/Braindustry-Mod`
+* Download the latest release at [Github](https://github.com/ThebestkillerTBK/CheatingUtils/releases/latest)
 
 ## Compiling
 JDK 8.\
