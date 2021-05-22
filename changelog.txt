@@ -1,2 +1,5 @@
 v1.0
 Able to unlock campaign items.
+
+v1.1
+Resource hacks.
