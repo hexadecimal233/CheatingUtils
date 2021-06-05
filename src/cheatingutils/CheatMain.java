@@ -9,12 +9,13 @@ import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
+import mindustry.game.Team;
 
 import cheatingutils.cheats.*;
 
 public class CheatMain extends Mod{
 
-    public CheatMain (){
+    public CheatMain () {
         Log.info("CheatUtils Loaded");
 
         Events.on(ClientLoadEvent.class, e -> {
@@ -27,6 +28,7 @@ public class CheatMain extends Mod{
                            //if (!Vars.net.client()) t.button("Rules Edit", RuleCheat::openRulesEditDialog).growX().row();
                             t.button("Items Hack", CheatMain::openModCheatItemsMenu).growX().row();
                             t.button("Research Hack", CheatMain::openUnlockContentDialog).growX().row();
+                            t.button("Team Cheat", CheatMain::openTeamDialog).growX().row();
                         });
                         dialog.addCloseListener();
                         dialog.addCloseButton();
@@ -47,8 +49,18 @@ public class CheatMain extends Mod{
         }, () -> {
         });
     }
+    public static void openTeamDialog() {
+    //Cons<Team> team = ;
+        new TeamCheat((team) -> {
+            try {
+                mindustry.Vars.player.team(team);
+            } catch (Exception exception) {
+                Log.info(exception);
+            }
+        }).show();
+    }
     @Override
-    public void loadContent(){
+    public void loadContent() {
 		return;
     }
 
